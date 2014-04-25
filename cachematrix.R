@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This pair of functions is written co complete the peer reviewed programming assignment 2
+## in the coursera.org course R Programming (rprog-002)
+## These functions are used to cache the matrix inverses after computation to save the processing power
+## inverse computation is a computationally-heavy process
 
-## Write a short comment describing this function
+## makeCacheMatrix takes as an arguments a matrix and sets up a mechanism for storing a cached inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -16,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve takes as an input the output of makeCacheMatrix and returns the inverse
+ # if the inverse had already been computed, it is being returned from cache
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
